@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+        .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+        .header { background: #075E54; color: white; padding: 20px; text-align: center; border-radius: 5px; }
+        .content { background: #f9f9f9; padding: 20px; margin: 20px 0; border-radius: 5px; }
+        .footer { text-align: center; padding: 20px; color: #666; }
+        .info-item { margin: 10px 0; }
+        .badge { background: #25D366; color: white; padding: 5px 10px; border-radius: 3px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Novo Orçamento Recebido!</h1>
+            <p>Um novo cliente solicitou orçamento através do site</p>
+        </div>
+        <div class="content">
+            <h2>Informações do Cliente</h2>
+            <div class="info-item"><strong>Nome:</strong> {NOME}</div>
+            <div class="info-item"><strong>Email:</strong> {EMAIL}</div>
+            <div class="info-item"><strong>Telefone:</strong> {TELEFONE}</div>
+            <div class="info-item"><strong>Serviço:</strong> <span class="badge">{SERVICO}</span></div>
+            
+            <h2>Mensagem</h2>
+            <p>{MENSAGEM}</p>
+            
+            <h2>Detalhes</h2>
+            <div class="info-item"><strong>Data:</strong> {DATA}</div>
+            <div class="info-item"><strong>IP:</strong> {IP}</div>
+        </div>
+        <div class="footer">
+            <p>Este é um email automático do sistema TechHelp</p>
+        </div>
+    </div>
+</body>
+</html>

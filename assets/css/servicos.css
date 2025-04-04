@@ -1,0 +1,127 @@
+.servicos-page {
+    padding: 120px 0 60px;
+    background: var(--cor-fundo-alt);
+}
+
+.servicos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.servico-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: var(--sombra-suave);
+    transition: var(--transicao);
+    position: relative;
+    overflow: hidden;
+}
+
+.servico-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: var(--cor-destaque);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.servico-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--sombra-media);
+}
+
+.servico-card:hover::before {
+    transform: scaleX(1);
+}
+
+.servico-card i {
+    font-size: 3rem;
+    color: var(--cor-destaque);
+    margin-bottom: 1.5rem;
+}
+
+.servico-card h3 {
+    color: var(--cor-primaria);
+    margin-bottom: 1.5rem;
+}
+
+.servico-lista {
+    text-align: left;
+    margin: 1.5rem 0;
+    padding: 0;
+}
+
+.servico-lista li {
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.servico-link {
+    color: var(--cor-texto);
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    transition: all 0.3s;
+}
+
+.servico-lista li:hover {
+    background: rgba(0,0,0,0.02);
+    transform: translateX(5px);
+}
+
+.servico-lista li:hover .servico-link {
+    color: var(--cor-destaque);
+}
+
+.servico-lista li:last-child {
+    border-bottom: none;
+}
+
+.btn-orcamento {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: var(--cor-destaque);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: var(--transicao);
+    margin-top: 1.5rem;
+}
+
+.btn-orcamento:hover {
+    background: var(--cor-secundaria);
+    transform: translateY(-2px);
+    box-shadow: var(--sombra-suave);
+}
+
+.garantia-info {
+    margin-top: 4rem;
+    text-align: center;
+    padding: 3rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: var(--sombra-suave);
+}
+
+.garantia-info h2 {
+    color: var(--cor-primaria);
+    margin-bottom: 1rem;
+}
+
+.garantia-info p {
+    color: var(--cor-texto-claro);
+    font-size: 1.1rem;
+}

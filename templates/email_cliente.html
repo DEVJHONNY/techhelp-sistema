@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+        .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+        .header { background: #075E54; color: white; padding: 20px; text-align: center; border-radius: 5px; }
+        .content { background: #f9f9f9; padding: 20px; margin: 20px 0; border-radius: 5px; }
+        .footer { text-align: center; padding: 20px; color: #666; }
+        .whatsapp-button { 
+            background: #25D366; 
+            color: white; 
+            padding: 15px 30px; 
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Recebemos seu Orçamento!</h1>
+            <p>Olá {NOME}, agradecemos seu contato</p>
+        </div>
+        <div class="content">
+            <h2>Detalhes do seu pedido</h2>
+            <p><strong>Serviço solicitado:</strong> {SERVICO}</p>
+            <p><strong>Sua mensagem:</strong></p>
+            <p>{MENSAGEM}</p>
+            <p><strong>Data:</strong> {DATA}</p>
+            
+            <p>Entraremos em contato em breve para mais detalhes.</p>
+            
+            <center>
+                <a href="https://wa.me/5571992124952?text=Olá! Solicitei um orçamento para {SERVICO}.%0A%0ADetalhes:%0A{MENSAGEM}%0A%0ANome: {NOME}" 
+                   class="whatsapp-button" 
+                   target="_blank">
+                    <i class="fab fa-whatsapp"></i> Falar no WhatsApp agora
+                </a>
+            </center>
+        </div>
+        <div class="footer">
+            <p>TechHelp - Assistência Técnica Especializada</p>
+            <small>Este é um email automático, não responda.</small>
+        </div>
+    </div>
+</body>
+</html>

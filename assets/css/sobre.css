@@ -1,0 +1,39 @@
+.sobre-page {
+    padding-top: 100px;
+}
+
+.perfil {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.perfil img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.certificacoes {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.certificacoes ul {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.certificacoes li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+@media (max-width: 768px) {
+    .perfil {
+        grid-template-columns: 1fr;
+    }
+}
